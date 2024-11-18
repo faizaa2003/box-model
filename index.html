@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffc4c4;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .box {
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 200px;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .icon {
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+        .title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .description {
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="icon">📄</div>
+        <div class="title">Allowed file type</div>
+        <div class="description">Specify file formats that are allowed to upload.</div>
+    </div>
+    <div class="box">
+        <div class="icon">Ⓜ</div>
+        <div class="title">Maximum file size</div>
+        <div class="description">Set maximum file size that is allowed to upload.</div>
+    </div>
+    <div class="box">
+        <div class="icon">👁</div>
+        <div class="title">Attachment Visibility</div>
+        <div class="description">Display attachments to certain customer groups and store views.</div>
+    </div>
+    <div class="box">
+        <div class="icon">⬇</div>
+        <div class="title">Download limit</div>
+        <div class="description">Limit the number of times an attachment can be downloaded.</div>
+    </div>
+    <div class="box">
+        <div class="icon">🔍</div>
+        <div class="title">Product Preview</div>
+        <div class="description">Preview products that are assigned to attachment.</div>
+    </div>
+    <div class="box">
+        <div class="icon">🔧</div>
+        <div class="title">API support</div>
+        <div class="description">Specify file formats that are allowed to upload.</div>
+    </div>
+</body>
+</html>
